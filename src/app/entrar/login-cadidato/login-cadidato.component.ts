@@ -20,7 +20,7 @@ export class LoginCadidatoComponent implements OnInit {
     this.loginService.autenticar(this.email, this.senha).subscribe(
       (resposta) => {
         console.log(resposta);
-        // this.router.navigate(['dashboard']);
+        this.router.navigate(['dashboard']);
       },
       (error) => {
         console.log(error);

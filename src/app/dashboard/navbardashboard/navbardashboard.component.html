@@ -1,1 +1,58 @@
-<p>navbardashboard works!</p>
+<div class="container">
+  <div class="boxSideBar">
+    <div class="boxSideBar">
+      <div>
+        <img src="../../../assets/user/user-128.svg" alt="" />
+      </div>
+    </div>
+    <div class="infosUser">
+      <h3>{{ candidato.nome }}</h3>
+      <p>{{ candidato.category }}</p>
+    </div>
+    <div class="divider">
+      <mat-divider></mat-divider>
+    </div>
+    <div>
+      <div>
+        <div class="botoesRedirect">
+          <button mat-button>
+            <mat-icon
+              aria-hidden="false"
+              aria-label="Example home icon"
+              fontIcon="computer"
+              class="icon"
+            ></mat-icon
+            >Dashboard
+          </button>
+          <button mat-button>
+            <mat-icon
+              aria-hidden="false"
+              aria-label="Example home icon"
+              fontIcon="percent"
+              class="icon"
+            ></mat-icon
+            >Oportunidades
+          </button>
+          <button mat-button>
+            <mat-icon
+              aria-hidden="false"
+              aria-label="Example home icon"
+              fontIcon="check_circle"
+              class="icon"
+            ></mat-icon
+            >Candidaturas
+          </button>
+          <button mat-button>
+            <mat-icon
+              aria-hidden="false"
+              aria-label="Example home icon"
+              fontIcon="settings"
+              class="icon"
+            ></mat-icon
+            >Configurações
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

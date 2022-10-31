@@ -1,6 +1,7 @@
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, tap } from 'rxjs';
+import { CandidatoService } from 'src/app/autenticacao/candidato/candidato.service';
 import { environment } from 'src/environments/environment.prod';
 
 const API = environment.apiURL;
@@ -9,18 +10,27 @@ const API = environment.apiURL;
   providedIn: 'root',
 })
 export class LoginCadidatoService {
-  constructor(private httpClient: HttpClient) {}
+  constructor(
+    private httpClient: HttpClient,
+    private candidatoService: CandidatoService
+  ) {}
 
-  autenticar(email: string, senha: string): Observable<any> {
-    return this.httpClient.post(
-      `http://localhost:8080/authenticade`,
-      {
-        email: email,
-        senha: senha,
-      },
-      {
-        responseType: 'json',
-      }
-    );
+  autenticar(email: string, senha: string): Observable<HttpResponse<any>> {
+    return this.httpClient
+      .post(
+        `${API}/authenticade`,
+        {
+          email: email,
+          senha: senha,
+        },
+        {
+          observe: 'response',
+        }
+      )
+      .pipe(
+        tap((res: any) => {
+          this.candidatoService.salvaToken(res.body?.token);
+        })
+      );
   }
 }
