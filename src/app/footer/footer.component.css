@@ -1,0 +1,60 @@
+.FooterContainer {
+  background-color: #000;
+}
+.FooterBox {
+  display: flex;
+  padding: 64px;
+  align-items: center;
+}
+
+.FooterPrimeiraLista {
+  list-style-type: none;
+  color: #fff;
+  font-size: 12px;
+  width: 160px;
+  margin: 0 200px 0px 370px;
+  padding-bottom: 46px;
+}
+
+.FooterPrimeiraLista li img {
+  width: 75px;
+  height: 75px;
+}
+.FooterPrimeiraLista li {
+  margin: 24px 0px;
+}
+.ListaProfissionaisTech {
+  list-style-type: none;
+  color: #fff;
+  font-size: 12px;
+  padding-bottom: 131px;
+  margin-right: 100px;
+}
+div ul li h2 {
+  font-size: 14px;
+}
+
+.ListaProfissionaisTech li {
+  margin: 24px 0px;
+}
+
+.ListaParaEmpresas {
+  list-style-type: none;
+  color: #fff;
+  font-size: 12px;
+  padding-bottom: 180px;
+  margin-right: 100px;
+}
+.ListaParaEmpresas li {
+  margin: 24px 0px;
+}
+
+.ListaAEmpresa {
+  list-style-type: none;
+  color: #fff;
+  font-size: 12px;
+  margin-right: 100px;
+}
+.ListaAEmpresa li {
+  margin: 24px 0px;
+}

@@ -1,0 +1,35 @@
+<div>
+  <div>
+    <app-navbar></app-navbar>
+  </div>
+  <div class="container">
+    <div class="tituloCard">
+      <div>
+        <h2 class="tituloCardTitulo">
+          As melhores vagas para profissionais de tecnologia
+        </h2>
+      </div>
+      <div class="TemplateGrid">
+        <div class="conteudoBox">
+          <div class="filtroContainer">
+            <div class="displayFlex">
+              <p class="filtroParagrafo">{{ listaVagas.length }} vagas</p>
+
+              <p>disponiveis</p>
+            </div>
+            <div class="select">
+              <select>
+                <option value="MaisRecentes">Mais Recentes</option>
+                <option value="MaisAntigas">Mais Antigas</option>
+                <option value="MaiorSalario">Maior Salario</option>
+                <option value="MenorSalario">Menor Salario</option>
+              </select>
+            </div>
+          </div>
+          <app-card-vagas [vagas]="listaVagas"></app-card-vagas>
+        </div>
+        <app-formulariodebusca></app-formulariodebusca>
+      </div>
+    </div>
+  </div>
+</div>

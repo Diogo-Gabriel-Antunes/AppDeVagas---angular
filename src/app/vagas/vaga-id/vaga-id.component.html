@@ -1,0 +1,162 @@
+<div class="">
+  <div class="container" *ngIf="vaga$ | async as vaga">
+    <div class="container">
+      <app-navbar></app-navbar>
+    </div>
+    <div class="container ajusteHeight">
+      <div class="box">
+        <div class="boxCard">
+          <div class="displayFlex">
+            <a routerLink="/vagas">
+              <div class="linkVoltar">
+                <p><mat-icon>keyboard_backspace</mat-icon></p>
+                <p>Voltar</p>
+              </div>
+            </a>
+          </div>
+          <div class="ajusteVagas">
+            <h2>{{ vaga.jobTitle }}</h2>
+          </div>
+          <div class="displayFlex">
+            <div *ngFor="let technologies of vaga.technologiesRequired">
+              <div class="technologies">
+                <p>{{ technologies.technologies }}</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <app-infos-vaga [vaga]="vaga"></app-infos-vaga>
+          </div>
+          <div class="candidaturaBox">
+            <p>
+              Curtiu a vaga? Demonstre interesse e seja encontrado pela empresa
+            </p>
+            <div class="criaPerfil">
+              <button>Criar perfil para demonstrar interesse</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div>
+        <div class="background displayFlex">
+          <div>
+            <div class="empresaInfo">
+              <div class="empresaInfoContainer">
+                <div class="empresaInfoDivPrincipal">
+                  <div>
+                    <h2>Empresa</h2>
+                  </div>
+                  <div class="descricao">
+                    <p class="descricaoParagrafoComIcone">
+                      <mat-icon class="icone"> location_on</mat-icon
+                      >{{ vaga.company.adress }}
+                    </p>
+                    <p class="descricaoParagrafo">
+                      {{ vaga.company.companyDescription }}
+                    </p>
+                  </div>
+                  <div class="vagaDescricao">
+                    <div
+                      *ngFor="let descricao of vaga.jobDescription.split('\n')"
+                    >
+                      <p margin="0 auto">{{ descricao }}</p>
+                    </div>
+                  </div>
+                  <div>
+                    <h2>Beneficios</h2>
+                    <div class="beneficiosGrid">
+                      <div
+                        class="beneficioOption"
+                        *ngFor="let beneficio of vaga.benefits"
+                      >
+                        <div class="beneficioOptionIcon">
+                          <mat-icon class="beneficioOptionIcon"
+                            >check_circle_outline</mat-icon
+                          >
+                        </div>
+                        <p>
+                          {{ beneficio.benefits }}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="empresaInfo">
+                <div class="empresaInfoContainer">
+                  <div class="empresaInfoDivPrincipal">
+                    <div class="vagaDescricaoRequisitos">
+                      <div>
+                        <div>
+                          <h2 class="titleRequisitos">Requisitos</h2>
+                        </div>
+                        <div>
+                          <h2>Tecnologias Necessarias</h2>
+                          <small>Tecnologias Obrigatorias...</small>
+                        </div>
+                        <div class="displayFlex">
+                          <div
+                            *ngFor="
+                              let techNecessaria of vaga.technologiesRequired
+                            "
+                          >
+                            <div class="technologies">
+                              <p>{{ techNecessaria.technologies }}</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <h2>Tecnologias Desejaveis</h2>
+                          <small
+                            >Tecnologias que irão fazer a diferença...</small
+                          >
+                        </div>
+                        <div class="displayFlex">
+                          <div
+                            *ngFor="
+                              let techDesejaveis of vaga.technologiesDesirable
+                            "
+                          >
+                            <div class="technologies technologiesDesejaveis">
+                              <p>{{ techDesejaveis.technologies }}</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <h2>Atividades</h2>
+                    </div>
+                    <div>
+                      <p *ngFor="let atividade of vaga.activities.split('\n')">
+                        {{ atividade }}
+                      </p>
+                      <div class="candidaturaBox">
+                        <p>
+                          Curtiu a vaga? Demonstre interesse e seja encontrado
+                          pela empresa
+                        </p>
+                        <div class="criaPerfil">
+                          <button>
+                            Criar perfil para demonstrar interesse
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <app-vaga-similares></app-vaga-similares>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>

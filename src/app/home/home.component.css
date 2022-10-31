@@ -1,0 +1,148 @@
+.container {
+  background-color: black;
+  display: flex;
+  color: #fff;
+  padding: 144px 200px;
+  height: 534px;
+}
+.container__box {
+  width: 1506px;
+  padding: 0px 284px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container__box__banner {
+  width: 384px;
+  line-height: 36px;
+}
+
+.container__box__banner__tituloPrincipal {
+  font-size: 36px;
+  margin: 8px 0px 16px;
+}
+.container__box__banner__paragrafo {
+  font-size: 15px;
+  margin: 0px 0px 32px;
+}
+
+.container__box__banner__button {
+  border-radius: 4px;
+
+  background: #edf2f7;
+  letter-spacing: 1.5px;
+  padding: 1rem;
+  text-transform: uppercase;
+  background-color: #9412dc;
+  color: white;
+  margin-bottom: 1rem;
+}
+.cointainer__box__banner__link {
+  color: aqua;
+}
+.container__box__banner__paragrafo2 {
+  margin: 8px 4px 0px 0px;
+  font-size: 14px;
+}
+.container__box__banner__imagemBox {
+  padding: 0 128px;
+}
+.container__box__banner__imagem {
+  width: 300px;
+}
+
+.empresasContrataramBox {
+  padding: 36px 200px;
+}
+
+.empresasContrataramBox__container {
+  margin: 0 auto;
+}
+.empresasContrataramBox__container p {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 60px;
+  color: #9412dc;
+}
+.empresasContrataramBox__container__conteudo {
+  display: flex;
+  margin: 0 auto;
+}
+
+.empresasContrataramBox__container__conteudo img {
+  width: 150px;
+  height: 150px;
+  margin: 0 30px;
+}
+
+.numerosPodemDizerMaisBox {
+  padding: 36px 200px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #e2eff1;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.numerosPodemDizerMaisBox__conteudo {
+  margin: 0 auto;
+  padding: 48px 16px;
+}
+.numerosPodemDizerMaisBox__conteudo__paragrafo {
+  text-align: center;
+  margin-bottom: 16px;
+  color: #9412dc;
+  line-height: 1.5;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.numerosPodemDizerMaisBox__conteudo2 {
+  width: 600px;
+  margin: 8px 0px 0px;
+  padding: 8px 0px 0px;
+}
+.numerosPodemDizerMaisBox__conteudo2 p {
+  line-height: 1.5;
+  font-weight: 600;
+  font-size: 36px;
+  text-align: center;
+}
+.CardOportunidades {
+  display: flex;
+}
+.CardOportunidade_container {
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 24px 0px;
+  width: 320px;
+  margin: 0 30px;
+}
+.CardOportunidade__container__Title {
+  font-size: 42px;
+  color: #9412dc;
+  text-align: center;
+  margin-bottom: auto;
+}
+.CardOportunidade__container__subTitle p {
+  font-size: 24px;
+  padding: 8px 0;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-align: center;
+}

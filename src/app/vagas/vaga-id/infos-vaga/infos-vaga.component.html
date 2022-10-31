@@ -1,0 +1,34 @@
+<div class="infosContainer">
+  <div>
+    <div class="displayFlexColumn localizacaoAjuste">
+      <div class="border"><mat-icon class="svg"> location_on</mat-icon></div>
+      <div>
+        <h2 class="title">Localizacao</h2>
+      </div>
+      <div class="ml4">{{ vaga.vacancyLocation }}</div>
+      <div></div>
+    </div>
+  </div>
+  <div class="displayFlexColumn">
+    <div class="displayFlexColumn faixaSalarialAjuste">
+      <div class="border"><mat-icon class="svg"> attach_money</mat-icon></div>
+      <div>
+        <h2 class="title">Faixa salarial</h2>
+      </div>
+      <div>
+        {{ vaga.salaryRange | currency: "BRL" }} -
+        {{ vaga.salaryRangeMax | currency: "BRL" }}({{ vaga.typeOfContract }})
+      </div>
+    </div>
+  </div>
+  <div class="displayFlexColumn boxSenioridade">
+    <div class="border"><mat-icon class="svg">work</mat-icon></div>
+    <div>
+      <h2 class="title">Senioridade</h2>
+    </div>
+
+    <div class="ml4">
+      <p>{{ vaga.seniority }}</p>
+    </div>
+  </div>
+</div>

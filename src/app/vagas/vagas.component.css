@@ -1,0 +1,56 @@
+.container {
+  background-color: #f2f5f6;
+}
+
+.tituloCard {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 64px 16px 32px 16px;
+}
+
+.tituloCardTitulo {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 5rem;
+  font-family: Open Sans, sans-serif;
+}
+
+.TemplateGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.conteudoBox {
+  display: flex;
+  justify-content: space-between;
+  width: 874px;
+  flex-direction: column;
+}
+
+.filtroContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 874px;
+  margin-bottom: 32px;
+}
+
+.displayFlex {
+  display: flex;
+}
+
+.filtroParagrafo {
+  color: #9412dc;
+  font-weight: 700;
+  margin-right: 6px;
+}
+.select {
+  margin-right: 20px;
+}
+.select select {
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  border-color: #9412dc;
+  background-color: #9412dc;
+  color: #fff;
+}

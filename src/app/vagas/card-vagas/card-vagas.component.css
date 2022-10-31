@@ -1,0 +1,207 @@
+.cardVagasContainer {
+  background-color: white;
+  margin: 6px 24px 12px 0;
+  padding: 22px;
+}
+
+.cardVagasContainerAjuste {
+  padding: 24px;
+}
+.cardVagasContainerTitulo {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.cardVagasTechnologies {
+  display: flex;
+  margin-left: 12px;
+}
+
+.cardVagasTechnologiesCard {
+  border: 3px solid;
+  border-color: #3182ce;
+  margin: 0 8px;
+
+  border-radius: 8px;
+}
+.cardVagasTechnologiesCard p {
+  margin: 6px 12px;
+}
+.cardVagaLocation {
+  margin: 24px 20px;
+}
+.cardVagaLocationFlex {
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+}
+.svgContainer {
+  display: flex;
+  align-items: center;
+  background-color: #3182ce;
+  border-radius: 12px;
+  color: white;
+  width: 20px;
+  height: 20px;
+  margin: 0 32px;
+}
+.svg {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  padding: 2px;
+}
+.cardVagaLocationTextDisplay {
+  display: flex;
+  align-items: center;
+  background-color: #3182ce;
+  border-radius: 12px;
+  color: white;
+  width: 20px;
+  height: 20px;
+}
+.cardVagaLocationConteudo {
+  margin: 12px 8px 0 0;
+  padding: 2px;
+}
+.cardVagaLocationText {
+  display: flex;
+  align-items: center;
+  padding: 0 8px 0 0;
+}
+
+.cardVagaSeniority {
+  display: flex;
+  align-items: center;
+}
+
+.cardVagaSeniorityConteudo {
+  display: flex;
+  align-items: center;
+}
+
+.cardVagaSeniorityConteudo div {
+  display: flex;
+  align-items: center;
+}
+.cardVagaSalaryRange {
+  padding: auto 20px;
+}
+
+.cardVagaSalaryRangeFlex {
+  display: flex;
+  align-items: center;
+}
+.cardVagaSalaryRangeIcon {
+  background-color: blue.400;
+  border-radius: 12px;
+  color: white;
+}
+
+.cardVagaSalaryRangeValue {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  margin: 0px 0 0 12px;
+}
+.cardVagaSalaryRangeTypeOfContract {
+  margin-left: 8px;
+  margin-top: 12px;
+}
+
+.cardVagaJobDescription {
+  padding: 24px 12px;
+}
+.cardVagaButtons {
+  padding: 12px;
+  display: flex;
+  justify-content: end;
+}
+.cardVagaButtons button {
+  color-scheme: blue;
+  margin: 12px 12px;
+  border-radius: 4px;
+}
+.linksContainer {
+  width: 100%;
+}
+.links {
+  display: flex;
+  justify-content: end;
+  margin: 0 12px;
+}
+.botaoCriarPerfil {
+  display: inline-flex;
+  appearance: none;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  position: relative;
+  vertical-align: middle;
+  outline-offset: 2px;
+  line-height: 1.2;
+  font-weight: 700;
+  transition-duration: 200ms;
+  height: 2.5rem;
+  min-width: 2.5rem;
+  font-size: 12px;
+  padding-inline-start: 1rem;
+  padding-inline-end: 1rem;
+
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: #9412dc;
+  margin-left: 1rem;
+  outline: transparent solid 2px;
+  border-radius: 4px;
+  padding: 8px 16px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #9412dc;
+  cursor: pointer;
+}
+.botaoVerDetalhes:hover {
+  background-color: #c570f3;
+}
+a {
+  text-decoration: none;
+}
+.botaoVerDetalhes {
+  cursor: pointer;
+  display: inline-flex;
+  appearance: none;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  user-select: none;
+  position: relative;
+  white-space: nowrap;
+  vertical-align: middle;
+  outline-offset: 2px;
+  width: auto;
+  line-height: 1.2;
+  font-weight: 700;
+  transition-duration: 200ms;
+  height: 2.5rem;
+  min-width: 2.5rem;
+  font-size: 12px;
+  padding-inline-start: 1rem;
+  padding-inline-end: 1rem;
+
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  background-color: #9412dc;
+  color: white;
+  margin-left: 1rem;
+  outline: transparent solid 2px;
+  border-radius: 4px;
+  padding: 16px 30px;
+}
+.botaoCriarPerfil:hover {
+  background-color: #c570f3;
+  border-color: #c570f3;
+  color: white;
+}

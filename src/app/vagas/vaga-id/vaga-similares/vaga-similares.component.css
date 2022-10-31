@@ -1,0 +1,19 @@
+.container {
+  margin-top: 80px;
+}
+.background {
+  background-color: white;
+}
+.ajusteCard {
+  padding: 2.25rem 28px;
+  margin-bottom: 25px;
+}
+.locationDisplay {
+  display: flex;
+}
+.icone {
+  font-size: 18px;
+}
+.displayFlex {
+  display: flex;
+}

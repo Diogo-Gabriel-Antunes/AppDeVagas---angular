@@ -1,0 +1,57 @@
+<div>
+  <div>
+    <app-navbar></app-navbar>
+  </div>
+  <div class="container">
+    <div class="centralaizer">
+      <div class="titleContainer">
+        <div>
+          <h2>Bem-vindo!</h2>
+        </div>
+      </div>
+      <div class="cardTitle"><h3>Log in</h3></div>
+      <form class="form" (ngSubmit)="login()">
+        <div class="card">
+          <div>
+            <mat-form-field class="formInput" appearance="fill">
+              <mat-label>E-mail</mat-label>
+              <input
+                matInput
+                placeholder="E-mail"
+                [(ngModel)]="email"
+                name="email"
+              />
+            </mat-form-field>
+
+            <mat-form-field class="formInput" appearance="fill">
+              <mat-label>Senha</mat-label>
+              <input
+                matInput
+                type="password"
+                placeholder="Senha"
+                [(ngModel)]="senha"
+                name="senha"
+              />
+            </mat-form-field>
+          </div>
+          <div class="cardOptions">
+            <div>
+              <mat-checkbox [color]="'primary'"
+                >Mantenha me conectado</mat-checkbox
+              >
+            </div>
+            <div>
+              <a href="">
+                <p>Problemas com o Log in?</p>
+              </a>
+            </div>
+          </div>
+          <div class="cardBotao">
+            <button>Entrar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

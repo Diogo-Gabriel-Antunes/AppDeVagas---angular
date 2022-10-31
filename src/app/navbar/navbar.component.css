@@ -1,0 +1,19 @@
+.navBar__Container{
+  display: flex;
+  justify-content: space-between;
+}
+.navBar__Container__imagem{
+  width: 75px;
+  height: 75px;
+}
+.navBar__Container__links{
+  display: flex;
+  align-items: center;
+
+}
+.navBar__Container__links a {
+  margin: 0 20px;
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+}

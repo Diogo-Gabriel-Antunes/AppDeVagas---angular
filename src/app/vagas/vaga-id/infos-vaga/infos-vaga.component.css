@@ -1,0 +1,43 @@
+.title {
+  font-size: 16px;
+  margin: 8px 16px;
+}
+.boxSenioridade {
+  margin-left: 32px;
+  align-items: center;
+}
+.infosContainer {
+  display: flex;
+  margin-top: 24px;
+}
+
+.displayFlexColumn {
+  display: flex;
+  flex-direction: column;
+}
+.faixaSalarialAjuste {
+  margin-left: 32px;
+  align-items: center;
+}
+.localizacaoAjuste {
+  align-items: center;
+}
+
+.border {
+  background-color: #9412dc;
+  color: white;
+  padding: 4px;
+  border-radius: 12px;
+  max-width: 20px;
+  display: flex;
+  align-items: center;
+}
+.svg {
+  font-size: 16px;
+  width: 16px;
+  height: 16px;
+}
+.ml4 {
+  display: flex;
+  align-items: center;
+}

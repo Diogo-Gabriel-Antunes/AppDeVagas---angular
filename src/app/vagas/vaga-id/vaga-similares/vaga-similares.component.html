@@ -1,0 +1,43 @@
+<div class="container">
+  <div>
+    <h2>Vagas similares a essa</h2>
+  </div>
+  <div *ngIf="vagasSimilares | async as vagasSimilares">
+    <div *ngFor="let vaga of vagasSimilares.slice(0, 3)">
+      <div class="background ajusteCard">
+        <div>
+          <h2>{{ vaga.jobTitle }}</h2>
+        </div>
+        <div>
+          <p class="locationDisplay">
+            <mat-icon class="icone"> location_on</mat-icon>
+            {{ vaga.vacancyLocation }}
+          </p>
+        </div>
+        <div>
+          <p class="locationDisplay">
+            <mat-icon class="icone"> attach_money</mat-icon>
+            {{ vaga.salaryRange | currency: "BRL" }} -
+            {{ vaga.salaryRangeMax | currency: "BRL" }}
+          </p>
+        </div>
+        <div class="displayFlex">
+          <div
+            *ngFor="let technologies of vaga.technologiesRequired.slice(0, 3)"
+          >
+            <div>
+              <div class="technologies">
+                <p>{{ technologies.technologies }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <a [routerLink]="['/vagas/', vaga.id]"
+            ><h2>Visualize esta vaga</h2></a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

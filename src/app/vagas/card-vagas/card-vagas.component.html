@@ -1,0 +1,78 @@
+<div *ngFor="let vaga of vagas">
+  <div class="cardVagasContainer">
+    <div class="cardVagasContainerAjuste">
+      <h2 class="cardVagasContainerTitulo">{{ vaga.jobTitle }}</h2>
+    </div>
+    <div class="cardVagasTechnologies">
+      <div *ngFor="let technologie of vaga.technologiesRequired">
+        <div class="technologies">
+          <p>{{ technologie.technologies }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="cardVagaLocation">
+      <div class="cardVagaLocationFlex">
+        <div class="cardVagaLocationConteudo">
+          <div>
+            <div class="cardVagaLocationText">
+              <div class="cardVagaLocationText">
+                <p class="cardVagaLocationTextDisplay">
+                  <mat-icon class="svg"> location_on</mat-icon>
+                </p>
+              </div>
+              <div>
+                <p class="cardVagaLocationText">{{ vaga.vacancyLocation }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cardVagaLocationConteudo">
+          <div class="cardVagaLocationFlex">
+            <div class="cardVagaLocationText">
+              <p class="cardVagaLocationTextDisplay">
+                <mat-icon class="svg">work</mat-icon>
+              </p>
+            </div>
+            <div>
+              <p class="cardVagaLocationText">{{ vaga.seniority }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cardVagaSalaryRange">
+        <div class="cardVagaSalaryRangeFlex">
+          <div class="cardVagaLocationTextDisplay">
+            <mat-icon class="svg"> attach_money</mat-icon>
+          </div>
+          <div class="cardVagaSalaryRangeFlex">
+            <p class="cardVagaSalaryRangeValue">
+              {{ vaga.salaryRange | currency: "BRL" }} -
+              {{ vaga.salaryRangeMax | currency: "BRL" }}
+            </p>
+            <p class="cardVagaSalaryRangeTypeOfContract">
+              ({{ vaga.typeOfContract }})
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="cardVagaJobDescription"
+        *ngFor="let paragrafo of vaga.jobDescription.split('\n\n').slice(0, 4)"
+      >
+        <p>{{ paragrafo }}</p>
+      </div>
+      <div class="linksContainer">
+        <div class="links">
+          <a routerLink="/login ">
+            <button class="botaoCriarPerfil">
+              Criar perfil para demonstrar interesse
+            </button>
+          </a>
+          <a [routerLink]="['/vagas', vaga.id]">
+            <button class="botaoVerDetalhes">Ver detalhes</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

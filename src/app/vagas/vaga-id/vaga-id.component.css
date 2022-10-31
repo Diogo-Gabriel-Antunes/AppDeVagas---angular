@@ -1,0 +1,145 @@
+.container {
+  background-color: white;
+}
+.ajusteHeight {
+  height: 100%;
+}
+
+.box {
+  display: flex;
+  width: 1280px;
+}
+.icone {
+  font-size: 18px;
+}
+.boxCard {
+  margin: 0 auto;
+}
+
+.displayFlex {
+  display: flex;
+}
+
+.linkVoltar {
+  cursor: pointer;
+  color: #9412dc;
+  display: flex;
+  align-items: center;
+}
+.linkVoltar p {
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.ajusteVagas {
+  margin-top: 50px;
+}
+.ajusteVagas h2 {
+  font-size: 40px;
+}
+
+.titleRequisitos {
+  margin-bottom: 50px;
+}
+.technologiesDesejaveis {
+  border: 3px solid gray;
+  color: gray;
+}
+.candidaturaBox {
+  margin-top: 64px;
+  margin-bottom: 20px;
+}
+.candidaturaBox p {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #9412dc;
+  font-size: 16px;
+}
+.criaPerfil {
+  width: 410px;
+  display: flex;
+  height: 53px;
+  align-items: center;
+}
+.criaPerfil button {
+  color-scheme: blue;
+  padding: 12px 24px;
+  color: #fff;
+  background-color: #9412dc;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 12px;
+}
+.background {
+  background-color: #f2f5f6;
+  padding-bottom: 50px;
+}
+.empresaInfo {
+  display: flex;
+  width: 1280px;
+  flex-direction: column;
+  margin-top: 32px;
+}
+.empresaInfoContainer {
+  display: flex;
+  width: 1581px;
+  margin-top: 50px;
+}
+.empresaInfoDivPrincipal {
+  margin: 0 auto;
+  background-color: white;
+  padding: 42px;
+}
+.empresaInfoDivPrincipal h2 {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #11273a;
+}
+.descricao {
+  display: flex;
+  margin: 16px 0;
+}
+.descricaoParagrafo {
+  margin-left: 24px;
+}
+.descricaoParagrafoComIcone {
+  display: flex;
+}
+.vagaDescricao {
+  width: 720px;
+  min-height: 400px;
+}
+
+.vagaDescricaoRequisitos {
+  width: 858px;
+  min-height: 400px;
+}
+.vagaDescricao p {
+  margin: 0 auto;
+}
+.beneficiosGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 24px 0;
+}
+.beneficioOption {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.beneficioOption p {
+  font-size: 15px;
+  margin-left: 12px;
+  padding-top: 12px;
+}
+.beneficioOptionIcon {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+  color: blue;
+  padding: 4px;
+  border-radius: 12px;
+  max-width: 28px;
+}
