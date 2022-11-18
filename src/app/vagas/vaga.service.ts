@@ -27,4 +27,8 @@ export class VagaService {
   vagasSimilares(id: number): Observable<IVagas[]> {
     return this.http.get<IVagas[]>(`${this.API}/vacancies/similar/${id}`);
   }
+
+  listaOportunidades(id: number) {
+    return this.http.get<IVagas[]>(`${this.API}/candidate/opportunity/${id}`);
+  }
 }
